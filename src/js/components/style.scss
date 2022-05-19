@@ -1,0 +1,191 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: skyblue;
+  overflow: hidden;
+  main {
+    width: 100vw;
+    height: 100vh;
+    background-color: skyblue;
+  }
+}
+
+.preview {
+  height: 30vh;
+  line-height: 30vh;
+  text-align: center;
+  width: 100vw;
+  background-color: rgb(152, 141, 141);
+  overflow: hidden;
+  div {
+    height: 30vh;
+    max-height: 30vh;
+    width: 30vw;
+    margin: 0 auto;
+  }
+}
+
+.button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  button {
+    margin: 0 auto;
+    display: block;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+  }
+}
+
+.select-path {
+  text-align: center;
+  font-size: 16px;
+}
+
+.type {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.select-type {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  & > div {
+    margin: 0 auto;
+    width: 150px;
+    height: 40px !important;
+
+    left: 50%;
+    margin-left: -75px;
+    span,
+    input {
+      line-height: 40px !important;
+    }
+    svg {
+      vertical-align: middle !important;
+    }
+  }
+  .ant-select-selector {
+    height: 40px !important;
+    line-height: 40px !important;
+    text-align: center;
+  }
+}
+
+.save {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  div {
+    line-height: 40px;
+    margin-right: 5px;
+    margin-left: 20px;
+  }
+  button {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 20px;
+  }
+  input {
+    width: 300px;
+  }
+}
+
+#note,
+#path {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 18px;
+  color: rgb(159, 96, 73);
+  text-align: center !important;
+  margin-top: 10px;
+}
+.rotate {
+  animation: fadenum 1.5s ease-in-out infinite;
+}
+@keyframes fadenum {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.table {
+  width: 100%;
+  max-height: 57vh;
+  overflow-y: scroll;
+  // margin-top: 10px;
+}
+.table-header {
+  width: 100%;
+  display: flex;
+  height: 7vh;
+  line-height: 7vh;
+  justify-content: space-between;
+  border-bottom: 1px solid #999;
+  background-color: #e3bcbc;
+}
+.table-header span {
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  flex: 1;
+}
+
+.table-header span:first-child {
+  flex: 3;
+}
+.table-header span:last-child {
+  min-width: 150px;
+}
+
+.table-content {
+  width: 100%;
+  background-color: #c2dfdf;
+}
+
+.table-content-item {
+  width: 100%;
+  height: 10vh;
+  line-height: 10vh;
+  display: flex;
+  border-bottom: 1px solid #999;
+}
+
+.table-content-item > div {
+  width: 25%;
+  overflow: hidden;
+  text-align: center;
+  flex: 1;
+}
+
+.table-content-item > div button {
+  margin-left: 5px;
+}
+.table-content-item > div:first-child {
+  flex: 3;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.table-content-item > div:last-child {
+  min-width: 150px;
+}
+
+.empty {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  box-sizing: content-box;
+}
